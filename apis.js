@@ -32,7 +32,7 @@ axios.get(apiUrl)
   })
   .catch(error => {
     // Handle errors
-    console.error('fetch-error:', error);
+    console.error('fetch-error yo yo:', error);
   });
 
 // Function to save data into a file
