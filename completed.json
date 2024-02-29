@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "todo": "Do something nice for someone I care about",
+    "completed": true,
+    "userId": 26
+  },
+  {
+    "id": 8,
+    "todo": "Write a thank you letter to an influential person in my life",
+    "completed": true,
+    "userId": 13
+  },
+  {
+    "id": 12,
+    "todo": "Organize pantry",
+    "completed": true,
+    "userId": 39
+  },
+  {
+    "id": 16,
+    "todo": "Draw and color a Mandala",
+    "completed": true,
+    "userId": 24
+  },
+  {
+    "id": 19,
+    "todo": "Create a compost pile",
+    "completed": true,
+    "userId": 5
+  },
+  {
+    "id": 20,
+    "todo": "Take a hike at a local park",
+    "completed": true,
+    "userId": 43
+  },
+  {
+    "id": 23,
+    "todo": "Plan a trip to another country",
+    "completed": true,
+    "userId": 37
+  }
+]

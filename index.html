@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task Status</title>
+</head>
+<body>
+ <h1> <a href="http://localhost:1234/api/notcompletdtask">Not Completed Tasks</a></h1>
+  <ul id="completed-tasks"></ul>
+
+  <h1><a href="http://localhost:1234/api/completedtask">Completed Tasks </a></h1>
+  <ul id="not-completed-tasks"></ul>
+  
+<script>
+    // Fetch completed tasks from the server
+    fetch('/api/completedtask')
+      .then(response => response.json())
+      .then(completedTasks => {
+        const completedTasksList = document.getElementById('completed-tasks');
+        completedTasks.forEach(task => {
+          const listItem = document.createElement('li');
+          listItem.textContent = task.title; // Assuming each task has a 'title' property
+          completedTasksList.appendChild(listItem);
+        });
+      });
+
+    // Fetch not completed tasks from the server
+    fetch('/api/notcompletdtask')
+      .then(response => response.json())
+      .then(notCompletedTasks => {
+        const notCompletedTasksList = document.getElementById('not-completed-tasks');
+        notCompletedTasks.forEach(task => {
+          const listItem = document.createElement('li');
+          listItem.textContent = task.title; // Assuming each task has a 'title' property
+          notCompletedTasksList.appendChild(listItem);
+        });
+      });
+  </script>
+</body>
+</html>
